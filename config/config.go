@@ -15,6 +15,7 @@ func ConnectDatabase() {
 	}
 
 	database.AutoMigrate(&models.Product{})
-
+	database.AutoMigrate(&models.Kelas{})
+	database.AutoMigrate(&models.Mahasiswa{})
 	DB = database
 }
